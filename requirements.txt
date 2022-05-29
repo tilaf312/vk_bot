@@ -3,6 +3,8 @@ certifi==2021.5.30
 charset-normalizer==2.0.12
 distlib==0.3.2
 filelock==3.0.12
+geographiclib==1.52
+geopy==2.2.0
 idna==3.3
 pipenv==2021.5.29
 platformdirs==2.2.0
