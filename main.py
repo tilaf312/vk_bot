@@ -25,7 +25,7 @@ for event in longpoll.listen():
     # если событие - это сообщение
     if event.type == VkBotEventType.MESSAGE_NEW:
         # если событие - пришло от конкретного юзера
-        if event.obj.message['from_id'] == my_id:
+        if event.obj.message['from_id'] == vadik_id:
             # если событие - это фотография
             try:
                 if event.obj.message['attachments'][0]['type'] == 'photo':
