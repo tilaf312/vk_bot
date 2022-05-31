@@ -25,7 +25,7 @@ for event in longpoll.listen():
     print(event)
     ch_id = event.chat_id
     # если событие - это сообщение и пришло от Вадика и не является обычным текстовым сообщением
-    if event.type == VkBotEventType.MESSAGE_NEW and event.obj.message['from_id'] == config.my_id and not len(
+    if event.type == VkBotEventType.MESSAGE_NEW and event.obj.message['from_id'] == config.vadik_id and not len(
             event.obj.message['attachments']) == 0:
         # если событие - это фотография
         try:
